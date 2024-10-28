@@ -67,7 +67,7 @@ console.log(1+2+"2"); //32
 console.log(-true); //-1
 console.log(+"");//0
 
-let num1,num2,num3
+let num1,num2,num3,num4
 
 
 
