@@ -57,3 +57,41 @@ console.log(Object.values(tinderUser)) //saari values ko liya uska ek array bana
 console.log(Object.entries(tinderUser))
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')) //kya ye property available hai ki nai
+
+
+
+const course={
+    coursename: "js in hindi",
+    price:"999",
+    courseInstructor:"hitesh"
+}
+// course.courseInstructor //har baar use karne pe ye bada likhna padega
+//so object ko destructure kar rahe
+const{courseInstructor:instructor}=course
+
+console.log(instructor) 
+
+const navbar=({company})=>{ //destructuring
+
+}
+navbar(company="hitesh")
+
+
+
+//---------------- API in form of JSON ----------------------
+// {
+//     "name":"hitesh",
+//     "coursename":"js in hindi",
+//     "price":"free"
+
+// } 
+
+
+//------------------ API in form of arrays ----------------
+
+[
+    {},
+    {},
+    {}
+]
+
