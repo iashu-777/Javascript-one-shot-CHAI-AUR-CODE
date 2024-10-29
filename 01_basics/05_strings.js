@@ -31,3 +31,4 @@ console.log(url.replace('%20','-'))
 console.log(url.includes('%'))
 
 console.log(gameName.split('-')); //array a jayega , we had split on the basis of dash
+
