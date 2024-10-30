@@ -26,5 +26,15 @@ if (Object.keys(emptyObject).length === 0) {
 let val1;
 // val1=5 ?? 10
 // val1 = null ?? 10;
-//val1=undefined??15
+// val1=undefined??15
+val1 = null ?? 10 ?? 20;
 console.log(val1);
+
+//ternary operator
+
+// conditon?true:false
+
+const iceTeaprice = 100;
+iceTeaprice <= 80 ? console.log("less than 80") : console.log("more than 80");
+
+
