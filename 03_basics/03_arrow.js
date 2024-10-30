@@ -36,4 +36,4 @@ const addTwoo = (num1, num2) => ({ username: "hitesh" });
 console.log(addTwoo(4, 9));
 
 const myArray = [2, 5, 1, 2, 3];
-// myArray.forEach(()=>{})
+// myArray.forEach(()=>{})  for each loop in arrow function 
