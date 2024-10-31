@@ -7,18 +7,19 @@
 </head>
 <body style="background-color: black; color: white">
     
+    <script>
+        const div=document.createElement('div')
+    div.className="main"
+    div.id=Math.round(Math.random()*10+1)
+    console.log(div);
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor='green'
+    div.style.padding="12px"
+    // div.innerText="Chai aur Code"
+    const addText=document.createTextNode("chai aur code")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+    </script>
 </body>
-<script>
-    const div=document.createElement('div')
-div.className="main"
-div.id=Math.round(Math.random()*10+1)
-console.log(div);
-div.setAttribute("title","generated title")
-div.style.backgroundColor='green'
-div.style.padding="12px"
-// div.innerText="Chai aur Code"
-const addText=document.createTextNode("chai aur code")
-div.appendChild(addText)
-document.body.appendChild(div)
-</script>
+
 </html>
