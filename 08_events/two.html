@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chaiaurcode</title>
+    
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+   //*************************************************** 
+    // //timeout use karne ka pehla tarika 
+
+    // setTimeout(function(){
+    //     console.log("hitesh")
+    // },5000) //after 5 second y function me likha hua kaam hoga
+    //***************************************************
+    
+    //**************************************************
+    //time out use karne ka dusra tarika
+
+    const sayHitesh=function(){
+        console.log("hitesh")
+    }
+    setTimeout(sayHitesh,5000) //reference diya
+
+    //**************************************************
+
+    //setTimeout se kisi H1 ko ya element ke andar ka text change karna
+    const changeTextinH1=function(){ 
+        document.querySelector('h1').innerHTML='Best javascript series'
+}
+    const changeMe=setTimeout(changeTextinH1,2000)
+
+    //**************************************************
+    //ab hame aisa kuch karna hai ki stop button pe jaise hi click kare to change na ho wo element , that is known as clear timeout
+    //clear timeout ko chaiye reference ki kis timeout ko htana chahte ho
+
+    document.querySelector('button').addEventListener('click',function(e){
+        clearTimeout(changeMe)
+        console.log("STOP")
+    })
+    
+    //**************************************************
+
+</script>
+</html>
