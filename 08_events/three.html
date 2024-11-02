@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>chaiaurjavascript</title>
-    
-</head>
-<body>
-    <h1>Chai aur code</h1>
+  </head>
+  <body>
+    <h1>Chai aur javascript</h1>
+    <button id="start">Start</button>
     <button id="stop">Stop</button>
+  </body>
+  <script>
+    //******************************************************
+    const sayDate = function (str) {
+      console.log(str, Date.now());
+    };
+    // const intervalID = setInterval(sayDate, 1000, "hi");
 
-</body>
-<script>
-  
+    // clearInterval(intervalID);
 
-</script>
+    //********************************************************
+
+    //task given by sir , if we click on start button then console.log pe hitesh print ho , baar baar aur stop kare to band ho jaye
+    let taskInterval
+    document.querySelector('#start').addEventListener('click',function(){
+       taskInterval= setInterval(sayDate,1000,"ashu")
+    })
+
+    document.querySelector('#stop').addEventListener('click',()=>{
+        clearInterval(taskInterval)
+    })
+    //********************************************************
+    
+
+
+
+
+
+
+    //********************************************************
+    //********************************************************
+    //********************************************************
+
+  </script>
 </html>
