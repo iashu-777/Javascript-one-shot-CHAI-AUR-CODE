@@ -65,3 +65,6 @@ String.prototype.truelength=function(){
 anotherUsername.truelength()
 "hitesh".truelength()
 "iceTEa".truelength()
+
+// ********************************************
+
