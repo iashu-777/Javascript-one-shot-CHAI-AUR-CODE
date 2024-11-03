@@ -1,2 +1,3 @@
-aChai=new User("masala")
-// masalaChai.addCourse()
+for(let key in chai){
+//     console.log(key)
+// }
